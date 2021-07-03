@@ -1,0 +1,14 @@
+CRITICAL - 2021-06-19 13:29:38 --> Attempt to read property "title" on array
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/dashboard/MovieController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/var/www/html/c...', 30)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\dashboard\MovieController->show()
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\MovieController))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-19 14:13:21 --> Attempt to read property "title" on array
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/dashboard/MovieController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/var/www/html/c...', 32)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\dashboard\MovieController->show()
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\MovieController))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

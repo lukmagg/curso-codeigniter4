@@ -1,0 +1,87 @@
+CRITICAL - 2021-06-25 04:02:12 --> Invalid file: dashboard/movie/edit.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(124): view('dashboard/movie...', Array)
+#3 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(81): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'edit')
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->edit('5')
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-25 04:02:43 --> Invalid file: dashboard/movie/edit.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(124): view('dashboard/movie...', Array)
+#3 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(81): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'edit')
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->edit('6')
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-25 04:06:16 --> Invalid file: dashboard/movie/edit.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(124): view('dashboard/movie...', Array)
+#3 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(81): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'edit')
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->edit('6')
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-25 04:07:04 --> Invalid file: dashboard/movie/edit.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(124): view('dashboard/movie...', Array)
+#3 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(81): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'edit')
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->edit('6')
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-25 04:10:48 --> Invalid file: dashboard/movie/edit.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(124): view('dashboard/movie...', Array)
+#3 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(81): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'edit')
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->edit('6')
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-25 04:16:26 --> Undefined variable $id
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/var/www/html/c...', 82)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->edit('6')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-25 04:18:16 --> Undefined variable $id
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/var/www/html/c...', 60)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->update('7')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-25 09:44:56 --> Call to undefined function App\Controllers\MovieImageModel()
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(63): App\Controllers\Movie->_upload('6')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->update('6')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-25 09:53:34 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Model.php on line 800
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->get('')
+#1 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(28): CodeIgniter\Model->__call('get', Array)
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('')
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-25 09:53:39 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Model.php on line 800
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->get('')
+#1 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(28): CodeIgniter\Model->__call('get', Array)
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('')
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

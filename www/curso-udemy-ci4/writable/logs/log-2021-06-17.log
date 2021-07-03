@@ -1,0 +1,6 @@
+CRITICAL - 2021-06-17 15:20:31 --> Call to undefined function App\Controllers\dashboard\MovieModel()
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\dashboard\MovieController->show()
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\MovieController))
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

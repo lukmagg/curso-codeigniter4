@@ -1,0 +1,115 @@
+CRITICAL - 2021-06-20 04:10:45 --> Cannot declare class App\Controllers\dashboard\Movie, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-20 04:15:50 --> Trying to access array offset on value of type null
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/var/www/html/c...', 34)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('show', '7')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-20 04:16:18 --> Trying to access array offset on value of type null
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/var/www/html/c...', 34)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('show', '6')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-20 04:16:36 --> Trying to access array offset on value of type null
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/var/www/html/c...', 34)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('show', '6')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-20 04:17:30 --> Trying to access array offset on value of type null
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/var/www/html/c...', 34)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('show', '6')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-20 04:34:54 --> Invalid file: dashboard/movie/new.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(44): view('dashboard/movie...')
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->new()
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-20 04:38:22 --> Undefined variable $title
+#0 /var/www/html/curso-udemy-ci4/app/Views/dashboard/templates/header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/var/www/html/c...', 13)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(230): include('/var/www/html/c...')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/templ...', Array, true)
+#4 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(50): view('dashboard/templ...', Array)
+#5 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(39): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'new')
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->new()
+#7 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#8 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-20 04:39:36 --> view(): Argument #2 ($data) must be of type array, string given, called in /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php on line 50
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(50): view('dashboard/templ...', 'Crear pelicula')
+#1 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(39): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'new')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->new()
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-20 04:40:19 --> Invalid file: dashboard/movie/$view.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(51): view('dashboard/movie...', Array)
+#3 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(39): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'new')
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->new()
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-20 06:53:09 --> min_max is not a valid rule.
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Validation/Validation.php(321): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_max')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Validation/Validation.php(159): CodeIgniter\Validation\Validation->processRules('title', 'title', 'fdafdasf', Array, Array)
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Controller.php(183): CodeIgniter\Validation\Validation->run()
+#3 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(44): CodeIgniter\Controller->validate(Array)
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->create()
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-20 07:00:17 --> Undefined variable $validation
+#0 /var/www/html/curso-udemy-ci4/app/Views/dashboard/movie/new.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/var/www/html/c...', 1)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(230): include('/var/www/html/c...')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#4 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(66): view('dashboard/movie...', Array)
+#5 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(36): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'new')
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->new()
+#7 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#8 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-20 07:01:59 --> Undefined variable $validation
+#0 /var/www/html/curso-udemy-ci4/app/Views/dashboard/movie/new.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/var/www/html/c...', 1)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(230): include('/var/www/html/c...')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#4 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(68): view('dashboard/movie...', Array)
+#5 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(36): App\Controllers\Movie->_loadDefaultView('Crear pelicula', Array, 'new')
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->new()
+#7 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#8 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-20 07:20:51 --> Allowed fields must be specified for model: App\Models\MovieModel
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/BaseModel.php(1205): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Movi...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/BaseModel.php(745): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, false)
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert(Array, false)
+#4 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(54): CodeIgniter\BaseModel->save(Array)
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->create()
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#7 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

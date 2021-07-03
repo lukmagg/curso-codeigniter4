@@ -1,0 +1,31 @@
+CRITICAL - 2021-06-12 14:49:24 --> Cannot declare class App\Controllers\CategoryController, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 14:49:59 --> Class "App\Controllers\dashboard\BaseController" not found
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/c...')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-12 15:23:42 --> Invalid file: dashboard/templates/header.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/templ...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/templ...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/dashboard/CategoryController.php(11): view('dashboard/templ...')
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\dashboard\CategoryController->index()
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\CategoryController))
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-12 15:25:32 --> Invalid file: dashboard/movie/index.php
+#0 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/movie...')
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('dashboard/movie...', Array, true)
+#2 /var/www/html/curso-udemy-ci4/app/Controllers/dashboard/CategoryController.php(12): view('dashboard/movie...')
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\dashboard\CategoryController->index()
+#4 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\CategoryController))
+#5 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
