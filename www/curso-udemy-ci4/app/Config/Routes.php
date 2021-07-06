@@ -36,7 +36,9 @@ $routes->get('/', 'Home::index');
 $routes->get('contacto', 'Home::contacto');
 $routes->get('contactarme/(:any)', 'Home::contacto/$1', ['as' => 'contacto']);
 $routes->get('category', 'dashboard/CategoryController::index');
-
+$routes->get('image', 'Home::image');
+$routes->get('image/(:num)/(:any)', 'Home::image/$1/$2', ['as' => 'get_image']);
+$routes->get('/movie/image/(:num)', 'Movie::delete_image/$1', ['as' => 'image_delete']);
 
 $routes->group('dashboard', function($routes)
 {

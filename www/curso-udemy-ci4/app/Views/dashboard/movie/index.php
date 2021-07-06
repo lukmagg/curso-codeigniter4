@@ -16,8 +16,9 @@
             <td><?= $m->title ?></td>
             <td><?= $m->category ?></td>
             <td>
+                <a class="mt-2 btn btn-primary btn-sm" href="<?= base_url() ?>/movie/<?= $m->id ?>">Ver</a>
                 <form action="<?= base_url() ?>/movie/delete/<?= $m->id ?>" method="post">
-                    <input class="btn btn-danger btn-sm" type="submit" name="submit" value="Borrar" />
+                    <input class="btn btn-danger btn-sm mt-2" type="submit" name="submit" value="Borrar" />
                 </form>
 
                 <a class="mt-2 btn btn-primary btn-sm" href="<?= base_url() ?>/movie/<?= $m->id ?>/edit">Editar</a>

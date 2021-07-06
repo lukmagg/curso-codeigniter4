@@ -1,0 +1,9 @@
+.crud-images{
+    position:absolute;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 10px;
+    font-size: 30px;
+    padding:0 10px 0 10px;
+    color: red;
+}

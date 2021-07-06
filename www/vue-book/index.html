@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <h2>{{ title }}</h2>
+    
+        <input type="text" v-model="title">
+    
+        <ul>
+            <li v-for="(value, index) in frutas">
+                {{ index }} => {{ value }}
+            </li>
+
+        </ul>
+    
+    
+    </div>
+
+
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                title: '',
+                frutas: ['manzana', 'banana', 'pera', 'coco']
+            }
+        })
+
+    </script>
+
+
+</body>
+</html>

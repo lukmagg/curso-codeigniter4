@@ -29,12 +29,21 @@ class Movie extends BaseController
 
 	// Show
 	public function show($id = null){
-		$movie = new MovieModel();
-		if($movie->find($id) == null){
+		$movieModel = new MovieModel();
+		$imageModel = new MovieImageModel();
+		$movie = $movieModel->asObject()->find($id);
+		if($movie == null){
 			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
 		}
-		
-		
+
+		$validation = \Config\Services::validation();
+
+		$this->_loadDefaultView($movie->title,
+			[
+				'movie'=>$movie, 
+				'images' => $imageModel->getByMovieId($id)
+			], 
+			'show');
 	}
 
 	// Delete
@@ -47,7 +56,34 @@ class Movie extends BaseController
 		return redirect()->to('/movie')->with('message', 'Pelicula eliminada');
 	}
 
+	// Delete Image
+	public function delete_image($imageId){
+		$Images_Model = new MovieImageModel();
 
+		$image = $Images_Model->asObject()->find($imageId);
+
+		if($image == null){
+			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+		}
+
+		// abre el archivo en modo binario
+		$imgRoute = WRITEPATH.'uploads/movies/'.$image->movie_id.'/'.$image->image;
+		
+		if(!file_exists($imgRoute)){
+			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+		}
+
+		// aca se borra la ruta de la imagen en la base de datos.
+		$Images_Model->delete($imageId);
+
+		// aca se borra la imagen desde la carpeta.
+		unlink($imgRoute);
+
+		return redirect()->back()->with('message', 'Imagen eliminada con exito!');
+
+
+
+	}
 
 	// New
 	public function new(){
@@ -84,16 +120,21 @@ class Movie extends BaseController
 
 	// Edit
 	public function edit($id = null){
-		$movie = new MovieModel();
+		$movieModel = new MovieModel();
 		$category = new CategoryModel();
+		$imagesModel = new MovieImageModel();
+
 		$categories = $category->asObject()->findAll(); 
-		if($movie->find($id) == null){
+		$movie = $movieModel->asObject()->find($id);
+		$images = $imagesModel->getByMovieId($id);
+		
+		if($movieModel->find($id) == null){
 			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
 		}
 		echo "Session: ". session('message');
 		$validation = \Config\Services::validation();
 
-		$this->_loadDefaultView('Crear pelicula', ['validation'=>$validation, 'categories'=>$categories, 'movie'=>$movie->asObject()->find($id)], 'edit');
+		$this->_loadDefaultView('Crear pelicula', ['validation'=>$validation, 'categories'=>$categories, 'movie'=>$movie, 'images' => $images], 'edit');
 	}
 
 
@@ -126,7 +167,7 @@ class Movie extends BaseController
 			if($imagefile->isValid() && !$imagefile->hasMoved()){
 				$newName = $imagefile->getRandomName();
 			
-				$imagefile->move(WRITEPATH . 'uploads/movies'.$movieId, $newName);
+				$imagefile->move(WRITEPATH . 'uploads/movies/'.$movieId, $newName);
 
 				$images->save([
 					'movie_id' => $movieId,

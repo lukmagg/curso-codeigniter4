@@ -1,0 +1,14 @@
+CRITICAL - 2021-07-06 16:03:28 --> Undefined variable $categories
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/var/www/html/c...', 43)
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('6')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-06 16:03:43 --> Too few arguments to function App\Models\MovieImageModel::getByMovieId(), 0 passed in /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php on line 44 and exactly 1 expected
+#0 /var/www/html/curso-udemy-ci4/app/Controllers/Movie.php(44): App\Models\MovieImageModel->getByMovieId()
+#1 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Movie->show('6')
+#2 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie))
+#3 /var/www/html/curso-udemy-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/curso-udemy-ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

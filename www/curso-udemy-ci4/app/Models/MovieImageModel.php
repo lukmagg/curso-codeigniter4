@@ -13,7 +13,11 @@ class MovieImageModel extends Model
 
     // Methods...
 
-
+    function getByMovieId($id){
+        return $this->asObject()
+            ->where('movie_id', $id)
+            ->findAll();
+    }
 
 
 
